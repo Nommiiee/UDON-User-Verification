@@ -18,7 +18,7 @@ This project implements a Ban & Whitelist system using VRChat's UDON Graph Progr
 - **BanList (String):** VRChat Trusted URL for the banlist TXT file. Format: [GitHub](*.github.io), [Pastebin](pastebin.com), [Github Gist](gist.githubusercontent.com). File format: "block-list,username1,username2,username3," (no new lines).
 
 - **ObjectsToShowOnVerify (GameObject Array):** Array of objects to reveal to verified users.
-- **ObjectsToHideOnVerify (GameObject Array):** Array of objects to hide from unverified users.
+- **ObjectsToHideOnVerify (GameObject Array):** Array of objects to hide from verified users.
 - **ObjectsToHideOnBan (GameObject Array):** Array of objects to hide when a user is banned.
 - **BanLocation (GameObject):** Location to teleport the user on a ban event.
 
