@@ -53,6 +53,13 @@ Ensure that the VRChat Trusted URL for the whitelist and banlist TXT files is co
     - **Create New Empty Object:** Create a new empty GameObject in your scene, then click on "Add Component." Search for the Udon Behvaiour and Drag & Dropping the script into the component to add it.
 4. Customize the system parameters as needed.
 
+## Credits
+
+If you find this VRChat Ban & Whitelist System useful in your project, please consider giving credit:
+
+- Author: Kunal Kashyap, Discord: @nommiiee
+- GitHub: [[Your GitHub Profile](https://github.com/Nommiiee/)]
+
 ## Contributing
 
 We welcome contributions! Feel free to submit issues, pull requests, or feature suggestions.
