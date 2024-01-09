@@ -47,7 +47,11 @@ Ensure that the VRChat Trusted URL for the whitelist and banlist TXT files is co
 
 1. Clone the repository or download the ZIP file.
 2. Import the provided UDON Graph into your VRChat project.
-3. Customize the system parameters as needed.
+3. Either:
+    - **Import the Prefab:** Drag and drop the provided Prefab into your scene.
+    - **Add Component to Existing GameObject:** Click on an existing GameObject in your scene, then click on "Add Component." Search for the Udon Behvaiour and Drag & Dropping the script into the component to add it.
+    - **Create New Empty Object:** Create a new empty GameObject in your scene, then click on "Add Component." Search for the Udon Behvaiour and Drag & Dropping the script into the component to add it.
+4. Customize the system parameters as needed.
 
 ## Contributing
 
