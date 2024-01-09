@@ -21,6 +21,7 @@ This project implements a Ban & Whitelist system using VRChat's UDON Graph Progr
 - **ObjectsToHideOnVerify (GameObject Array):** Array of objects to hide from verified users.
 - **ObjectsToHideOnBan (GameObject Array):** Array of objects to hide when a user is banned.
 - **BanLocation (GameObject):** Location to teleport the user on a ban event.
+- **VrcWorldObject (GameObject):** Sets the player respawn location to be same as BanLocation.
 
 ## Usage
 
