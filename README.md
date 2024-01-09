@@ -58,7 +58,7 @@ Ensure that the VRChat Trusted URL for the whitelist and banlist TXT files is co
 If you find this VRChat Ban & Whitelist System useful in your project, please consider giving credit:
 
 - Author: Kunal Kashyap, Discord: @nommiiee
-- GitHub: [[Your GitHub Profile](https://github.com/Nommiiee/)]
+- GitHub: https://github.com/Nommiiee/
 
 ## Contributing
 
