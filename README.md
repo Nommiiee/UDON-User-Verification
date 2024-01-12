@@ -1,13 +1,13 @@
 # VRChat User Verification/Control System
 
-Welcome to the VRChat User Verification/Control System, a Unity-based solution which work using the VRChat Udon Graph Node Programming Language designed to manage user access in VRChat worlds. 
+Welcome to the VRChat User Verification/Control System, a Unity-based solution which work using the VRChat Udon Graph Node Programming Language designed to manage user access in VRChat worlds.
 This system consists of three modules: WhiteList Module, BlackList Module, and Combined Module (Alpha Version, can be buggy).
 
 ## WhiteList Module
 
 The WhiteList Module allows world creators to control access based on a predefined list of trusted users. Utilizing the following variables:
 
-- **WhiteList (String):** VRChat Trusted URL for the whitelist TXT file. Supports formats: [GitHub](*.github.io), [Pastebin](pastebin.com), [Github Gist](gist.githubusercontent.com). File format: "white-list,username1,username2,username3," (no new lines).
+- **WhiteList (String):** VRChat Trusted URL for the whitelist TXT file.
 - **Enable Objects (GameObject Array):** Array of objects to reveal to verified users.
 - **Hide Objects (GameObject Array):** Array of objects to hide from verified users.
 
@@ -15,7 +15,7 @@ The WhiteList Module allows world creators to control access based on a predefin
 
 The BlackList Module allows world creators to restrict access for users on a predefined ban list. Key variables include:
 
-- **BlackList (String):** VRChat Trusted URL for the blacklist TXT file. Supports formats: [GitHub](*.github.io), [Pastebin](pastebin.com), [Github Gist](gist.githubusercontent.com). File format: "block-list,username1,username2,username3," (no new lines).
+- **BlackList (String):** VRChat Trusted URL for the blacklist TXT file.
 - **Hide Objects (GameObject Array):** Array of objects to hide from users on the blacklist.
 - **VRC World (VRC World Object):** Sets the player respawn location to be the same as BanLocation.
 - **BanLocation (GameObject):** Location to teleport the user on a ban event.
@@ -24,8 +24,8 @@ The BlackList Module allows world creators to restrict access for users on a pre
 
 The Combined Module integrates both the WhiteList and BlackList modules into a unified system, providing a comprehensive solution for managing user access in VRChat worlds. Key variables include:
 
-- **WhiteList (String):** VRChat Trusted URL for the whitelist TXT file. Supports formats: [GitHub](*.github.io), [Pastebin](pastebin.com), [Github Gist](gist.githubusercontent.com). File format: "white-list,username1,username2,username3," (no new lines).
-- **BlackList (String):** VRChat Trusted URL for the blacklist TXT file. Supports formats: [GitHub](*.github.io), [Pastebin](pastebin.com), [Github Gist](gist.githubusercontent.com). File format: "block-list,username1,username2,username3," (no new lines).
+- **WhiteList (String):** VRChat Trusted URL for the whitelist TXT file.
+- **BlackList (String):** VRChat Trusted URL for the blacklist TXT file.
 - **ObjectsToShowOnVerify (GameObject Array):** Array of objects to reveal to verified users.
 - **ObjectsToHideOnVerify (GameObject Array):** Array of objects to hide from verified users.
 - **ObjectsToHideOnBan (GameObject Array):** Array of objects to hide when a user is banned.
@@ -47,6 +47,8 @@ Ensure that the VRChat Trusted URL for the whitelist and banlist TXT files is co
 
 - **WhiteList TXT File Format:** "white-list,username1,username2,username3" (no new lines).
 - **BanList TXT File Format:** "block-list,username1,username2,username3" (no new lines).
+- Supports formats: [GitHub](*.github.io), [Pastebin](pastebin.com), [Github Gist](gist.githubusercontent.com).
+- File format: "white-list,username1,username2,username3," (no new lines).
 
 ## Dependencies
 
@@ -67,20 +69,20 @@ Choose the module that suits your requirements or use multiple modules for a com
 #### WhiteList Module
 
 - **Import the Prefab:** Drag and drop the provided `WhiteListModule` into your scene.
-- **Add Component to Existing GameObject:** Click on an existing GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `WhiteListModule` script into the component to add it.
-- **Create New Empty Object:** Create a new empty GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `WhiteListModule` script into the component to add it.
+- **Add Component to Existing GameObject:** Click on an existing GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `WhiteListModule` script into the component to add it. (Only if the imported prefab doesn't contain the UDON Behaviour)
+- **Create New Empty Object:** Create a new empty GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `WhiteListModule` script into the component to add it. (Only if the imported prefab doesn't contain the UDON Behaviour)
 
 #### BlackList Module
 
 - **Import the Prefab:** Drag and drop the provided `BlackListModule` into your scene.
-- **Add Component to Existing GameObject:** Click on an existing GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `BlackListModule` script into the component to add it.
-- **Create New Empty Object:** Create a new empty GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `BlackListModule` script into the component to add it.
+- **Add Component to Existing GameObject:** Click on an existing GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `BlackListModule` script into the component to add it. (Only if the imported prefab doesn't contain the UDON Behaviour)
+- **Create New Empty Object:** Create a new empty GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `BlackListModule` script into the component to add it. (Only if the imported prefab doesn't contain the UDON Behaviour)
 
 #### Combined Module (Alpha Version)
 
 - **Import the Prefab:** Drag and drop the provided `CombinedModulePrefab` into your scene.
-- **Add Component to Existing GameObject:** Click on an existing GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `CombinedModule` script into the component to add it.
-- **Create New Empty Object:** Create a new empty GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `CombinedModule` script into the component to add it.
+- **Add Component to Existing GameObject:** Click on an existing GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `CombinedModule` script into the component to add it. (Only if the imported prefab doesn't contain the UDON Behaviour)
+- **Create New Empty Object:** Create a new empty GameObject in your scene, then click on "Add Component." Search for the Udon Behaviour, and drag & drop the `CombinedModule` script into the component to add it. (Only if the imported prefab doesn't contain the UDON Behaviour)
 
 Customize the system parameters for each module according to your specific world's requirements. Enjoy flexible user access control with the VRChat User Verification/Control System!
 
